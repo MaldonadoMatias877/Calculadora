@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wraper {
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    width: 320px;
+}
+
+.screen {
+    text-align: right;
+    padding: 20px;
+    background-color: #3c3c3c;
+    font-size: 1.5rem;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.operators {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.results {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Botones */
+.calc-buttons {
+    padding: 10px;
+}
+
+.calc-button-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.calc-button {
+    flex: 1;
+    margin: 5px;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #4e4e4e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calc-button:hover {
+    background-color: #5f5f5f;
+}
+
+/* Botones especiales */
+.calc-button.double {
+    flex: 2;
+}
+
+.calc-button.triple {
+    flex: 3;
+}
+
+.calc-button:active {
+    background-color: #6f6f6f;
+}
+
+/* Operadores */
+.calc-button:nth-child(3),
+.calc-button:nth-child(4),
+.calc-button:last-child {
+    background-color: #f57c00;
+}
+
+.calc-button:nth-child(3):hover,
+.calc-button:nth-child(4):hover,
+.calc-button:last-child:hover {
+    background-color: #fb8c00;
+}
