@@ -27,9 +27,11 @@ function handleSymbol(symbol) {
 
             flushOperation(parseFloat(buffer));
             operadorPrevio = null;
+            screenOperators.innerText += ` ${buffer}`;
             buffer = total.toString();
-            screenOperators.innerText = '';
+            operadorPrevio = null;
             total = 0;
+            
             break;
         case '←':
             if (buffer.length === 1) {
