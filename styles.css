@@ -38,6 +38,7 @@ body {
 .operators {
     color: #aaa;
     font-size: 1rem;
+    justify-content: flex-start;
 }
 
 .results {
